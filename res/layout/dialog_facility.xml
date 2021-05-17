@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/facilityEditText"
+        android:imeOptions="actionNext"
+        android:inputType="textCapWords"
+        android:hint="@string/facility_name_title"
+        android:ems="10"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/facilityAddressEditText"
+        android:imeOptions="actionDone|flagNoExtractUi"
+        android:inputType="textPostalAddress"
+        android:hint="@string/facility_address_title"
+        android:ems="10"/>
+
+
+
+</LinearLayout>

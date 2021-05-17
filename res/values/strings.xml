@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">TrayCards</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_hall">HallActivity</string>
+    <string name="title_activity_room">RoomActivity</string>
+    <string name="button_done">Done</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_move">Move</string>
+
+    <!--dummy strings for hallway and facility -->
+    <string name="dining_room">Dining Room</string>
+    <string name="ha_hall">Ha Hall</string>
+    <string name="dogwood">Dogwood Hall</string>
+    <string name="east_hall">East Hall</string>
+    <string name="north_hall">North Hall</string>
+    <string name="south_hall">South Hall</string>
+    <string name="assisted_living">Assisted Living</string>
+    <string name="facility">Asheville Health Care Center</string>
+    <string name="number_rooms">no. of rooms filled: 15</string>
+    <string name="number_regs">no. of regulars: 10</string>
+    <string name="number_mech_soft">no. of mech softs: 5</string>
+    <string name="number_puree">no. of purees: 0</string>
+    <string name="number_diabetics">no. of diabetics: 6</string>
+    <string name="number_heart_healthy">no. of heart healthy: 3</string>
+    <string name="number_renals">no. of renals: 1</string>
+    <string name="number_nectars">no. of nectar thick: 2</string>
+    <string name="number_honey_thicks">no. of honey thick: 1</string>
+    <string name="facility_address">1984 us-70 Swannanoa, NC 28778</string>
+    <string name="facility_cencus">Census: 94</string>
+
+
+
+
+    <!--dummy strings for room data-->
+    <string name="room_number">101A</string>
+    <string name="alergy">ALLERGIC TO SHELLFISH</string>
+    <string name="chemical_diet">diabetic</string>
+    <string name="texture_diet">mech soft</string>
+    <string name="liquid_diet">honey thick</string>
+    <string name="notes">plate guard with red handle spoon and please make sure he does not get any shellfish. if state came in and saw us giving shellfish to this guy they gonnsa shut this motha fucka down</string>
+    <string name="plate_type">scoop plate</string>
+    <string name="likes">fish</string>
+    <string name="dislikes">hamburgers</string>
+    <string name="meal">chef salad</string>
+    <string name="dessert">jello</string>
+    <string name="beverage">sweet tea</string>
+
+    <!--titles for the textviews-->
+    <string name="room_number_title">Room Number</string>
+    <string name="allergy_title">Allergy</string>
+    <string name="chemical_diet_title">Chemical Diet</string>
+    <string name="texture_diet_title">Texture Diet</string>
+    <string name="liquid_diet_title">Liquid Diet</string>
+    <string name="plate_type_title">Plate Type: </string>
+    <string name="likes_title">Likes: </string>
+    <string name="dislikes_title">Dislikes: </string>
+    <string name="notes_title">Notes: </string>
+    <string name="order_title">Order: </string>
+    <string name="meal_title">Meal: </string>
+    <string name="dessert_title">Dessert: </string>
+    <string name="beverage_title">Drink: </string>
+
+    <string name="hall_title">Hall Name</string>
+    <string name="hall_start_title">Hall Starts At</string>
+    <string name="hall_end_title">Hall Ends At</string>
+
+    <string name="facility_name_title">Facility Name</string>
+    <string name="facility_address_title">Facility Address</string>
+
+    <string name="select_meal_button_title">Select Meal</string>
+    <string name="edit_title">Edit</string>
+    <string name="delete_title">Delete</string>
+
+    <string name="remove_confirmation">Are you sure you want to remove room </string>
+
+    <string name="table_number_hint">enter a table number</string>
+    <string name="move_to_table">Move this card to a table?</string>
+    <string name="move_to_room">Move this card back to the room? </string>
+</resources>

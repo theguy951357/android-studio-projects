@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hallEditText"
+        android:imeOptions="actionNext"
+        android:inputType="textCapWords"
+        android:hint="@string/hall_title"
+        android:ems="10"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hallBeginEditText"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:hint="@string/hall_start_title"
+        android:ems="10"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/hallEndEditText"
+        android:imeOptions="actionDone|flagNoExtractUi"
+        android:inputType="number"
+        android:hint="@string/hall_end_title"
+        android:ems="10"/>
+
+
+
+</LinearLayout>

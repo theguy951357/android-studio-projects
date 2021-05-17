@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardview"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="10dp"
+    app:cardElevation="8dp">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/room_constraint">
+
+
+            <android.support.constraint.Guideline
+                android:id="@+id/horizontal_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <android.support.constraint.Guideline
+                android:id="@+id/vertical_guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.5" />
+
+            <TextView
+                android:id="@+id/room_number_text_view"
+                style="@style/traycardTitleTexviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/room_number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/allergy_text_view"
+                style="@style/traycardTitleTexviewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/colorAccent"
+                android:text="@string/alergy"
+                android:textColor="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/room_number_text_view" />
+
+            <!--titles for the diet restrictions-->
+
+            <TextView
+                android:id="@+id/chemical_diet_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/chemical_diet_title"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/allergy_text_view" />
+
+            <TextView
+                android:id="@+id/texture_diet_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texture_diet_title"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/chemical_diet_title_textview"
+                app:layout_constraintEnd_toStartOf="@+id/vertical_guideline"
+                app:layout_constraintStart_toStartOf="@+id/vertical_guideline"
+                app:layout_constraintTop_toTopOf="@+id/chemical_diet_title_textview" />
+
+            <TextView
+                android:id="@+id/liquid_diet_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/liquid_diet_title"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/texture_diet_title_textview"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/vertical_guideline"
+                app:layout_constraintTop_toTopOf="@id/texture_diet_title_textview" />
+
+            <!--values for the diet restrictions-->
+
+            <TextView
+                android:id="@+id/chemical_diet_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="@string/chemical_diet"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/chemical_diet_title_textview"
+                app:layout_constraintStart_toStartOf="@+id/chemical_diet_title_textview"
+                app:layout_constraintTop_toBottomOf="@+id/chemical_diet_title_textview" />
+
+            <TextView
+                android:id="@+id/texture_diet_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/texture_diet"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toStartOf="@id/vertical_guideline"
+                app:layout_constraintStart_toStartOf="@id/vertical_guideline"
+                app:layout_constraintTop_toBottomOf="@id/texture_diet_title_textview" />
+
+            <TextView
+                android:id="@+id/liquid_diet_texview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/liquid_diet"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/liquid_diet_title_textview"
+                app:layout_constraintStart_toStartOf="@+id/liquid_diet_title_textview"
+                app:layout_constraintTop_toBottomOf="@+id/liquid_diet_title_textview" />
+
+            <!--plate type-->
+            <TextView
+                android:id="@+id/plate_title_textview"
+                style="@style/traycardTitleTexviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/plate_type_title"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/chemical_diet_textview" />
+
+            <TextView
+                android:id="@+id/plate_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@string/plate_type"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/plate_title_textview"
+                app:layout_constraintStart_toEndOf="@+id/plate_title_textview" />
+
+            <!--notes, likes and dislikes-->
+
+            <TextView
+                android:id="@+id/likes_title_textview"
+                style="@style/traycardTitleTexviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/likes_title"
+                app:layout_constraintEnd_toEndOf="@+id/plate_title_textview"
+                app:layout_constraintTop_toBottomOf="@+id/plate_title_textview" />
+
+            <TextView
+                android:id="@+id/likes_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@string/likes"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/likes_title_textview"
+                app:layout_constraintStart_toEndOf="@+id/likes_title_textview" />
+
+            <TextView
+                android:id="@+id/dislikes_title_textview"
+                style="@style/traycardTitleTexviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/dislikes_title"
+                app:layout_constraintBottom_toTopOf="@id/notes_title_textview"
+                app:layout_constraintEnd_toEndOf="@+id/likes_title_textview"
+                app:layout_constraintTop_toBottomOf="@+id/likes_title_textview" />
+
+            <TextView
+                android:id="@+id/dislikes_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@string/dislikes"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/dislikes_title_textview"
+                app:layout_constraintStart_toEndOf="@+id/dislikes_title_textview" />
+
+            <TextView
+                android:id="@+id/notes_title_textview"
+                style="@style/traycardTitleTexviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:text="@string/notes_title"
+                app:layout_constraintBottom_toTopOf="@+id/horizontal_guideline"
+                app:layout_constraintEnd_toEndOf="@+id/dislikes_title_textview"
+                app:layout_constraintTop_toBottomOf="@+id/dislikes_title_textview" />
+
+            <TextView
+                android:id="@+id/notes_textview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/notes"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="@+id/notes_title_textview"
+                app:layout_constraintTop_toBottomOf="@+id/notes_title_textview" />
+
+
+            <!--mealorder views-->
+
+            <TextView
+                android:id="@+id/order_title_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/order_title"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/notes_title_textview"
+                app:layout_constraintTop_toBottomOf="@+id/notes_textview" />
+
+            <TextView
+                android:id="@+id/meal_title_textview"
+                style="@style/traycardTitleTexviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/meal_title"
+                app:layout_constraintEnd_toEndOf="@+id/order_title_textview"
+                app:layout_constraintTop_toBottomOf="@+id/order_title_textview" />
+
+            <TextView
+                android:id="@+id/meal_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@string/meal"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/meal_title_textview"
+                app:layout_constraintStart_toEndOf="@+id/meal_title_textview" />
+
+            <TextView
+                android:id="@+id/dessert_title_textview"
+                style="@style/traycardTitleTexviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dessert_title"
+                app:layout_constraintEnd_toEndOf="@+id/meal_title_textview"
+                app:layout_constraintTop_toBottomOf="@+id/meal_title_textview" />
+
+            <TextView
+                android:id="@+id/dessert_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@string/dessert"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/dessert_title_textview"
+                app:layout_constraintStart_toEndOf="@+id/dessert_title_textview" />
+
+            <TextView
+                android:id="@+id/beverage_title_textview"
+                style="@style/traycardTitleTexviewStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/beverage_title"
+                app:layout_constraintEnd_toEndOf="@+id/dessert_title_textview"
+                app:layout_constraintTop_toBottomOf="@+id/dessert_title_textview" />
+
+            <TextView
+                android:id="@+id/beverage_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:text="@string/beverage"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="@+id/beverage_title_textview"
+                app:layout_constraintStart_toEndOf="@+id/beverage_title_textview" />
+
+            <Button
+                android:id="@+id/select_meal_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/select_meal_button_title"
+                app:layout_constraintEnd_toEndOf="@+id/beverage_title_textview"
+                app:layout_constraintTop_toBottomOf="@+id/beverage_title_textview" />
+
+            <Button
+                android:id="@+id/edit_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/edit_title"
+                app:layout_constraintBottom_toBottomOf="@+id/select_meal_button"
+                app:layout_constraintStart_toEndOf="@+id/select_meal_button" />
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="@string/delete_title"
+                app:layout_constraintBottom_toBottomOf="@+id/edit_button"
+                app:layout_constraintStart_toEndOf="@+id/edit_button" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.v7.widget.CardView>
+
